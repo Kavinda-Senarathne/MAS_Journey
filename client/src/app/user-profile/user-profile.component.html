@@ -1,0 +1,50 @@
+<div  *ngIf="userDetails">
+<div class="jumbotron text-center">
+    <img src="assets/img/Mas_Holdings_Logo.png">
+    <h1 class="display-5">
+      MAS Journey</h1>
+    <div class="lead">
+      Welcome to MAS Travel System</div>
+
+  </div>
+
+<table class="table table-hover">
+  <thead>
+      <tr>
+          <th colspan="2" class="text-center">User Profile</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Full Name</td>
+          <td>{{userDetails.fullName}}</td>
+      </tr>
+         <tr>
+          <td>Email</td>
+          <td>{{userDetails.email}}</td>
+      </tr>
+      <tr>
+          <td colspan="2" class="text-center">
+              <input type="button" (click)="onLogout()" value="Logout" />
+          </td>
+      </tr>
+  </tbody>
+</table>
+<div class="row">
+    <div class="col-md-4">
+
+      <h3><b>MAS Innovation</b></h3>
+      <p>All we know about the now – is that it is ever changing</p>
+    </div>
+    <div class="col-md-4">
+
+      <h3><b>MAS Lean Enterprise</b></h3>
+      <p>Better way of working , build sustainable process</p>
+    </div>
+    <div class="col-md-4">
+
+      <h3><b>MAS Active</b></h3>
+      <p> Revolutionary apparel solutions designed for maximum agility and comfor</p>
+    </div>
+  </div>
+</div>
